@@ -83,4 +83,39 @@ General Simulation Flow
 <img src="https://user-images.githubusercontent.com/62461290/183845405-c8a1de5c-f949-4962-9952-6bf8e68c164f.png"> <br>
 iVerilog Based Simulation Flow
 </p>
-  
+ ### Why different flavours of gates?
+The .lib file is a collection of logical modules. Any digital design can be implemented with the cells present in the stand cell library file. It includes logic gates like AND, OR, NOT, NAND, D_FFs, ....... etc. Also, it includes different flavours of the same gates such as 2-ip AND gate, 3-ip AND gate, 4-ip AND gate etc with different variations in speed, power and area. Yosys is the synthesizer used in this course. 
+
+Combinational delay in logic patth determines the maximum speed of operation of digital logic circuit. So we need cells that work fast to decrease the Tclk. Basically, the faster cells have wider mosfets to increase their current driving capacities. 
+<p align="center">
+  <img width=""1000 height="200" src="/Images/Pic6.png">
+</p><br>
+But faster cells have wider mosfets, hence they 
+
+- require more area (due to wider mosfets) and power (due to larger currents)
+- May cause hold time violations
+# 2. Timing Libraries, Hierarchical and Flat Synthesis
+## 2.1 Introduction to Timing Libraries
+When we look into any library, three important factrors are 
+ - Process: Signifies some variation due to fabrication
+ - Voltage: Voltage of operation
+ - Temperature: Ideal temperature of Silicon
+
+
+Keyword cell is used to define the keyword. As discussed earlier, there are different flavours of the same gate with varying area, power and delays. As an example, 2-ip AND gate is shown. Since 2-ip AND gate has 2 inputs, there are 4 possible input combinations. Power consumption of all the possible input combinations is mentioned in the `.lib` file. <br><br>
+
+## 2.2 Hierarchical Synthesis and Flat Synthesis
+When we perform hierarchical synthesis using the following commands,
+```
+read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog multiple_modules.v
+synth -top multiple_modules
+abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+show
+write_verilog -noattr multiple_modules_synth.v
+```
+We get the following schematic. 
+<p align="center">
+  <img src="/Images/Pic13.png">
+</p><br>
+
