@@ -1,6 +1,6 @@
 # RTLDesignwithVerilog
 
-#Contents
+# Contents
 [2. DAY 1 - Introduction to Verilog RTL Design and Synthesis](https://github.com/Suysh-msra/RTLDesignwithVerilog/blob/main/README.md#2-day-1---introduction-to-verilog-rtl-design-and-synthesis) <br>
 * [2.1 SKY130RTL D1SK1 - Introduction to open-source simulator iverilog](https://github.com/Suysh-msra/RTLDesignwithVerilog/blob/main/README.md#21-sky130rtl-d1sk1---introduction-to-open-source-simulator-iverilog) <br>
   - [2.1.1 SKY130RTL D1SK1 L1 Introduction iverilog design and test bench](https://github.com/Suysh-msra/RTLDesignwithVerilog/blob/main/README.md#211-sky130rtl-d1sk1-l1-introduction-iverilog-design-and-test-bench) <br>
@@ -46,5 +46,19 @@
 * [6.4 SKY130RTL D5SK4 - For Loop and For Generate](https://github.com/Suysh-msra/RTLDesignwithVerilog/blob/main/README.md#64-sky130rtl-d5sk4---for-loop-and-for-generate) <br>
 * [6.5 SKY130RTL D5SK5 - Labs on "For loop" and "For Generate"](https://github.com/Suysh-msra/RTLDesignwithVerilog/blob/main/README.md#65-sky130rtl-d5sk5---labs-on-for-loop-and-for-generate) <br>
 
- 
+[Contributors](https://github.com/Suysh-msra/RTLDesignwithVerilog#contributors)<br>
+
+[Acknowledgment](https://github.com/Suysh-msra/RTLDesignwithVerilog#acknowledgment)<br>
+
+[Contact Information](https://github.com/Suysh-msra/RTLDesignwithVerilog#contact-information)<br>
+
+# 1. An Introduction to the lecture series 
+
+Following is a summary of a 5 day workshop on RTL Design using Verilog and Sky130 nm Technology.
+
+## Tools used:
+ Markup : 1. A numbered list
+              1. A nested numbered list
+              2. Which is numbered
+          2. Which is numbered
 
