@@ -74,6 +74,12 @@ Following is a summary of a 5 day workshop on RTL Design using Verilog and Sky13
 <br>
 Simulator is constantly watching for any changes in the inputs mentioned in the sensitivity list. Upon the occurence of a change, it (re)evaluates the output signal.<br>
 <br>
-<p align="center">![183845210-c3b9712f-c56f-4d62-98d4-34d22ad78f10](https://user-images.githubusercontent.com/84946358/184058420-76c16eb2-2c69-4c27-adaf-a2e95c2a0508.png)
-
+<img src="https://user-images.githubusercontent.com/62461290/183845210-c3b9712f-c56f-4d62-98d4-34d22ad78f10.png"> <br>
+General Simulation Flow
+</p>
+<br>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/62461290/183845405-c8a1de5c-f949-4962-9952-6bf8e68c164f.png"> <br>
+iVerilog Based Simulation Flow
+</p>
   
