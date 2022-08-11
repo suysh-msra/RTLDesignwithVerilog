@@ -57,8 +57,23 @@
 Following is a summary of a 5 day workshop on RTL Design using Verilog and Sky130 nm Technology.
 
 ## Tools used:
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
 
+- Yosys is used to synthesize the verilog file and provide a netlist file.<br>
+- iVerilog is used to simulate the verilog code with the corresponding testbench. <br>
+- SKY130 Standard Cell Library was used to infer the gates level netlist from the verilog modules. <br>
+- GTKWave is used to view the simulation and synthesis waveform. <br>
+
+# 2. Day 1 - Introduction to Verilog RTL Design and Synthesis
+## 2.1 SKY130RTL D1SK1 - Introduction to open-source simulator iverilog
+### 2.1.1 SKY130RTL D1SK1 L1 Introduction iverilog design and test bench
+<b> Simulator: </b> Simulator is a tool used to check whether the design complies with the desired specs. It does that by simulating the code. <br>
+<br>
+<b> Design: </b> It is the actual verilog code or set of verilog codes which has the intended functionality to meet with the required functionality/speciifications. <br>
+<br>
+<b> TestBench: </b> It is the setup to apply stimulus to the design to check its functionality. It doesn't contain any input/output ports. <br>
+<br>
+Simulator is constantly watching for any changes in the inputs mentioned in the sensitivity list. Upon the occurence of a change, it (re)evaluates the output signal.<br>
+<br>
+<p align="center">![183845210-c3b9712f-c56f-4d62-98d4-34d22ad78f10](https://user-images.githubusercontent.com/84946358/184058420-76c16eb2-2c69-4c27-adaf-a2e95c2a0508.png)
+
+  
